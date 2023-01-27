@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Eleven</title>
+</head>
+<body id="main-body">
+    <div class="container" id="container">
+
+
+        <!-- Display Color Section -->
+            <section class="display-color-section">
+                <div class="header-label">
+                    <div id="header-heading"><label id="">Display Color</label></div>
+                    <div><button id="header-btn">Random Color</button></div>
+                </div>
+                <div class="header-inp">
+                    <div class="color-display" id="color-display"></div>
+                </div>
+            </section>
+    
+        <!-- Change and Copy Color Section -->
+            <section class="change-copy-color-section">
+    
+                <div class="change-copy-color-label">
+                    <div id="body-heading"><label id="">Change & Copy Color</label></div>
+                    <div>
+                        <button id="save-btn">Save</button>
+                        <button id="body-btn">Copy</button>
+                    </div>
+                </div>
+    
+                <div class="select-copy-mode">
+                    <div>
+                        <label for="" id="select-label">Select Copy Mode</label>
+                    </div>
+                    <div>
+                        <input type="radio" name = "color-mode" id="color-mode-hex" value = "hex" checked><label for="">Hex</label>
+                        <input type="radio" name = "color-mode" id="color-mode-rgb" value="rgb"><label for="">RGB</label>
+                    </div>
+                </div>
+    
+                <div class="hex-rgb">
+                    <div class="hex-div">
+                        <label for="">HEX</label>
+                        <input type="text" name="" id="hex-input" value="#000000">
+                    </div>
+                    <div class="rgb-div">
+                        <label for="">RGB</label>
+                        <input type="text" name="" id="rgb-input" disabled value="rgb(0,0,0)">
+                    </div>
+                </div>
+    
+            </section>
+    
+        <!-- Adjust RGB Colors Section -->
+            <section class="adjust-rgb-colors-section">
+    
+                <div class="adjust-header">
+                    <h3>Adjust RGB Colors</h3>
+                </div>
+    
+                <div class="adjust-footer">
+                    <div class="adjust-rgb-one">
+                        <div class="slider-heading"><span>Red</span> <span id="slider-one-value">100</span></div>
+                        <input type="range" min="0" max="255" name="" id="slider-heading-red" value="200">
+                    </div>
+                    <div class="adjust-rgb-two">
+                        <div class="slider-heading"><span>Green</span> <span id="slider-two-value">100</span></div>
+                        <input type="range" min="0" max="255" name="" id="slider-heading-green" value="200">
+                    </div>
+                    <div class="adjust-rgb-three">
+                        <div class="slider-heading"><span>Blue</span> <span id="slider-three-value">100</span></div>
+                        <input type="range" min="0" max="255" name="" id="slider-heading-blue" value="200">
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- preset section  -->
+            <section class="preset-section">
+                <h3>Preset Colors</h3>
+                <div class="preset-colors" id="preset-colors">
+
+                </div>
+            </section>
+
+            <!-- Custom color section -->
+            <section class="custom-section">
+                <h3>Customs Colors</h3>
+                <div class="custom-colors" id ="custom-colors">
+                </div>
+            </section>
+
+            <!-- back-ground preference -->
+            <section>
+                    <h3>Background Preference</h3>
+                    <div class="bankGroundPreview">
+                        <h4>Background Preview</h4>
+                        <div class="panel">
+                            <div class="left-panel" id="left-panel">
+                            </div>
+                            <div class="right-panel">
+
+                                <div id="bg-controller">
+                                    <label for="">Background Size</label>
+                                        <select name="" id="bg-size" class="select-group">
+                                            <option value="auto">Auto</option>
+                                            <option value="inherit">Inherit</option>
+                                            <option value="contain">Contain</option>
+                                            <option value="cover">Cover</option>
+                                        </select>
+
+                                    <label for="">Background Repeat</label>
+                                        <select name="" id="bg-repeat" class="select-group">
+                                            <option value="Repeat">Repeat</option>
+                                            <option value="No repeat">No repeat</option>
+                                        </select>
+                                
+                                    <label for="">Background Attachment</label>
+                                        <select name="" id="bg-attachment" class="select-group">
+                                            <option value="Initial">Initial</option>
+                                            <option value="Inherit">Inherit</option>
+                                            <option value="Local">Local</option>
+                                            <option value="Scroll">Scroll</option>
+                                            <option value="Fixed">Fixed</option>
+                                        </select>
+                                
+                                    <label for="">BackGround Position</label>
+                                        <select name="" id="bg-position" class="select-group">
+                                            <option value="Left Top">Left Top</option>
+                                            <option value="Left Bottom">Left Bottom</option>
+                                            <option value="Left Certer">Left Certer</option>
+                                            <option value="">Right Top</option>
+                                            <option value="Right Top">Right Bottom</option>
+                                            <option value="Right Certer">Right Certer</option>
+                                            <option value="Center Top">Center Top</option>
+                                            <option value="Center Bottom">Center Bottom</option>
+                                            <option value="Center Certer">Center Certer</option>    
+                                        </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <input type="file" id="bgFile" class="bgFile" accept="image/*">
+                        <button id="uploadBtn" class = "uploadBtn">Upload</button>
+                        <button id="deleteBtn" class = "deleteBtn">Delete</button>
+
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="app.js"></script>
+</body>  
+</html>
